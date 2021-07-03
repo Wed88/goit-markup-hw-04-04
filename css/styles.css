@@ -140,6 +140,7 @@ img {
 .contact-list {
   display: flex;
   margin-left: auto;
+  align-items: center;
 }
 
 .contact-item:not(:last-child) {
@@ -242,6 +243,7 @@ img {
   height: 120px;
   margin-bottom: 30px;
   background: #f5f4fa;
+  border-radius: 4px;
 }
 
 .feature-svg {
@@ -363,12 +365,50 @@ img {
   fill: #afb1b8;
 }
 
+/* Постоянные клиенты */
+
+.client-list {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.client-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 170px;
+  height: 92px;
+  border: 1px solid#AFB1B8;
+  border-radius: 4px;
+}
+
+.client-link:hover,
+.client-link:focus {
+  border: 1px solid var(--accent-color);
+}
+
+.client-link:hover .client-icon,
+.client-link:focus .client-icon {
+  fill: var(--accent-color);
+}
+
+.client-icon {
+  width: 106px;
+  height: 60px;
+  fill: #afb1b8;
+}
+
 /* Footer */
 
 .footer {
   padding-top: 60px;
   padding-bottom: 60px;
   background: #2f303a;
+}
+
+.footer-conteiner {
+  display: flex;
 }
 
 .address {
@@ -386,6 +426,50 @@ img {
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: #ffffff;
+}
+
+.social-footer {
+  margin-top: 12px;
+  margin-left: 70px;
+}
+
+.social-title-footer {
+  font-family: var(--main-font);
+  font-weight: var(--main-weight);
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  color: #ffffff;
+}
+
+.social-footer-list {
+  display: flex;
+}
+
+.social-footer-item:not(:last-child) {
+  margin-right: 10px;
+}
+
+.social-footer-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.social-footer-link:hover {
+  background-color: var(--accent-color);
+}
+
+.social-footer-icon {
+  width: 20px;
+  height: 20px;
+  fill: #ffffff;
 }
 
 .mail-address,
