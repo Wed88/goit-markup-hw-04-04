@@ -173,7 +173,7 @@ img {
   padding-bottom: 200px;
   background: #c4c4c4;
   background-image: radial-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-    url(/images/bg-image/bg_hero.jpg);
+    url(../images/bg-image/bg_hero.jpg);
   background-position: center;
   background-size: cover;
   max-width: 1600px;
