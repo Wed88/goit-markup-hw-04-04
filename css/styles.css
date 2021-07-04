@@ -71,7 +71,7 @@ img {
 .header {
   padding-top: 25px;
   padding-bottom: 25px;
-  border: 1px solid #ececec;
+  border-bottom: 1px solid #ececec;
 }
 
 .header-container {
@@ -130,9 +130,13 @@ img {
 .nav-link:active,
 .nav-link:focus,
 .mail-link:hover,
+.mail-link:focus,
 .tel-link:hover,
+.tel-link:focus,
 .mail-link:hover .contact-icon,
-.tel-link:hover .contact-icon {
+.mail-link:focus .contact-icon,
+.tel-link:hover .contact-icon,
+.tel-link:focus .contact-icon {
   color: var(--accent-color);
   fill: var(--accent-color);
 }
@@ -462,7 +466,8 @@ img {
   background-color: rgba(255, 255, 255, 0.1);
 }
 
-.social-footer-link:hover {
+.social-footer-link:hover,
+.social-footer-link:focus {
   background-color: var(--accent-color);
 }
 
